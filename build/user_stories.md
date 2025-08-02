@@ -1,6 +1,0 @@
-Here are the Agile-style user stories for a "nocode tool to generate synthetic data":
-1.  **As a Data Analyst,** I want to configure the types and formats of synthetic data fields using a visual interface, **so that** I can generate relevant datasets without writing code.
-2.  **As a Tester,** I want to generate a large volume of synthetic data that mimics real-world patterns, **so that** I can thoroughly test application performance and functionality without using sensitive production data.
-3.  **As a Developer,** I want to quickly generate various datasets with predefined structures, **so that** I can build and test new features even before real production data is available.
-4.  **As a Product Manager,** I want to easily generate sample synthetic data, **so that** I can create mockups or demonstrations without exposing confidential information.
-5.  **As a Data Privacy Officer,** I want to ensure that the generated synthetic data contains no personally identifiable information (PII), **so that** our development and testing processes remain compliant with privacy regulations.

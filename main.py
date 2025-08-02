@@ -1,4 +1,3 @@
-# File: main.py
 
 import os
 from workflows.full_build import run_full_pipeline

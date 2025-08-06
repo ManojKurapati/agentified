@@ -7,10 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-# Create Gemini LLM instance
 gemini = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.4, google_api_key=os.getenv("GOOGLE_API_KEY"))
 
-# Prompt template for backend generation
 backend_prompt = PromptTemplate(
     input_variables=["requirements"],
     template="""
@@ -22,5 +20,9 @@ backend_prompt = PromptTemplate(
     """
 )
 
-# Chain
 backend_agent = backend_prompt | gemini
+
+def generate_backend_code(requirements: str) -> str:
+    """Calls the backend agent and returns generated FastAPI code."""
+    result = backend_agent.invoke({"requirements": requirements})
+    return result.strip()

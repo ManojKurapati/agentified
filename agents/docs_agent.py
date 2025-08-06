@@ -6,11 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
-# Create Gemini LLM instance
 gemini = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.4, google_api_key=os.getenv("GOOGLE_API_KEY"))
 
-# Prompt template for documentation
 docs_prompt = PromptTemplate(
     input_variables=["code"],
     template="""
@@ -22,5 +19,4 @@ docs_prompt = PromptTemplate(
     """
 )
 
-# Chain
 docs_agent = docs_prompt | gemini

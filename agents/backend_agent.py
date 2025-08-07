@@ -25,4 +25,4 @@ backend_agent = backend_prompt | gemini
 def generate_backend_code(requirements: str) -> str:
     """Calls the backend agent and returns generated FastAPI code."""
     result = backend_agent.invoke({"requirements": requirements})
-    return result.strip()
+    return result.content.strip()

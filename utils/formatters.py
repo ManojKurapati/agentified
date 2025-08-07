@@ -9,7 +9,7 @@ def clean_output(text: str) -> str:
     """
     import re
     if hasattr(text, "content"):
-        text = text.content  # Handle LangChain message object
+        text = text.content  
     text = text.strip()
     text = re.sub(r"^```(?:\\w+)?", "", text, flags=re.MULTILINE)
     text = re.sub(r"```$", "", text, flags=re.MULTILINE)

@@ -14,11 +14,17 @@ bizdev_prompt = PromptTemplate(
 You are the Head of Business Development at a startup.
 
 Write a plan that includes:
+- Capital requirements and funding strategies
+- Fund utilization breakdown
 - Potential partnership opportunities (platforms, companies, influencers)
 - B2B and B2C growth strategies
 - Monetization ideas
 - Geographic and market expansion plans
 - Timeline of key milestones
+- Potential challenges and mitigation strategies
+- Metrics for success
+- ROI projections
+
 
 Product idea:
 {requirements}
